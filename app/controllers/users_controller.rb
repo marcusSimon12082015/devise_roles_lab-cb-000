@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   end
 
   def destory
-
+    pry
   end
 
   def update
