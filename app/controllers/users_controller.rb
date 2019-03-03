@@ -16,7 +16,6 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    pry
   end
 
   def update
