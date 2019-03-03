@@ -8,7 +8,9 @@ class UsersController < ApplicationController
   end
 
   def show
-
+    if current_user.id == params[:id].to_i
+      @user = User.find(params[:id])
+    end
   end
 
   def create
