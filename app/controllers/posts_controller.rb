@@ -5,4 +5,10 @@ class PostsController < ApplicationController
       @post.update(params[:content])
     end
   end
+
+  private
+
+  def posts_params
+    params.require(:post).permit(:content)
+  end
 end
