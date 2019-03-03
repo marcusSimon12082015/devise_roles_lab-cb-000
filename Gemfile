@@ -6,7 +6,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'devise'
 gem 'high_voltage'
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.6'
 
 group :development do
   gem 'better_errors'
