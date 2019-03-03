@@ -11,7 +11,8 @@ class UsersController < ApplicationController
     if current_user.id == params[:id].to_i
       @user = User.find(params[:id])
     else
-      redirect_to users_path, error: "Access denied."
+      flash[:error] = "Access denied."
+      redirect_to users_path
     end
   end
 
