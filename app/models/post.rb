@@ -1,4 +1,2 @@
-class Post < ActiveRecord::Base
-
-
-end 
+class Post < ApplicationRecord
+end
