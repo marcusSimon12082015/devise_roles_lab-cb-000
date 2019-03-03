@@ -36,7 +36,7 @@ describe PostsController do
       it 'allows the request' do
         created_post = create(:post, content: 'bar')
 
-        post :update, params: {id: created_post.id, content: 'foo'} 
+        post :update, params: {id: created_post.id, content: 'foo'}
 
         expect(created_post.reload.content).to eq('foo')
       end
