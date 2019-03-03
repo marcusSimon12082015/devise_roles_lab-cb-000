@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   def show
     if current_user.id == params[:id].to_i
       @user = User.find(params[:id])
+    else
+      redirect_to users_path
     end
   end
 
