@@ -7,14 +7,14 @@ class UsersController < ApplicationController
 
   end
 
-  def show 
+  def show
 
-  end 
+  end
 
-  def create 
+  def create
 
-  end 
-  
+  end
+
   def destory
 
   end
